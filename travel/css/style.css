@@ -380,4 +380,12 @@ z-index: -1;
 
 /*Stories end*/
 
+.container_links {
+    display: flex;
+    
+}
 
+.icons {
+    display: flex;
+
+}
