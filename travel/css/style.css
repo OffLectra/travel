@@ -149,14 +149,6 @@ body {
     padding-top: 0px;
     -webkit-transition: -webkit-transform .5s ease-in-out;
     transition:         transform .5s ease-in-out;
-
-}
-.header_login:hover {
-    transform: scale(1.2);
-
-}
-
-.header_login_link{
     color: white;
     font-family: 'Red Hat Text';
     font-weight: 500;
@@ -164,6 +156,10 @@ body {
     text-decoration: none;
     margin-top: auto;
     margin-bottom: auto;
+}
+.header_login:hover {
+    transform: scale(1.2);
+
 }
 
 .header_nav {
@@ -262,14 +258,6 @@ body {
     padding-top: 0px;
     -webkit-transition: -webkit-transform .5s ease-in-out;
     transition:         transform .5s ease-in-out;
-}
-
-.search_button:hover{
-    transform: scale(1.1);
-
-}
-
-.search_btn_link{
     color: white;
     text-decoration: none;
     font-family: 'Red Hat Text';
@@ -277,6 +265,11 @@ body {
     font-size: 24px;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+.search_button:hover{
+    transform: scale(1.1);
+
 }
 
 .search_content {
@@ -432,6 +425,13 @@ body {
     margin-right: auto;
     -webkit-transition: -webkit-transform .5s ease-in-out;
     transition:         transform .5s ease-in-out;
+    color: white;
+    text-decoration: none;
+    font-family: 'Red Hat Text';
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .find_more_btn:hover{
@@ -443,16 +443,6 @@ body {
     margin-right: 10px;
 }
 
-.find_more_link{
-    color: white;
-    text-decoration: none;
-    font-family: 'Red Hat Text';
-    font-weight: 500;
-    font-size: 24px;
-    margin-top: auto;
-    margin-bottom: auto;
-
-}
 /*Destinatios end*/
 
 
@@ -554,12 +544,6 @@ body {
     padding-top: 0px;
     -webkit-transition: -webkit-transform .5s ease-in-out;
     transition:         transform .5s ease-in-out;
-}
-.see_more_button:hover{
-    transform: scale(1.2);
-}
-
-.see_more_link{
     color: white;
     text-decoration: none;
     font-family: 'Red Hat Text';
@@ -567,8 +551,12 @@ body {
     font-size: 24px;
     margin-top: auto;
     margin-bottom: auto;
-
 }
+.see_more_button:hover{
+    transform: scale(1.2);
+}
+
+
 /*Stories end*/
 
 
