@@ -88,6 +88,8 @@
 
 html{
     box-sizing: inherit;
+    scroll-behavior: smooth;
+
 }
 
 body {
@@ -98,22 +100,26 @@ body {
     height: 3735px;
     margin-top: 0px;
     background-color: white;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 /* Header start */
 .header {
-    padding-top: 15px;
+    padding-top: 20px;
     padding-bottom: 25px;
     box-shadow: 0 0 15px rgba(13,96,111,1.0);
     background-color: #F2785C;
     opacity: 0.7;
     height: 90px;
-    position: fixed;
+    position: absolute;
     top: 0;
-    left: 0;
+    left: auto;
     width: 1440px;
+
 }
 .header-logo {
-    padding-bottom: 12px;
+    padding-bottom: 8px;
 }
 
 .wrapper {
@@ -128,10 +134,31 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+
 }
 
 .header_login {
     padding-top: 10px;
+    height: 41px;
+    width: 103px;
+    background-color: #0D606F;
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
+    padding-top: 0px;
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    transition:         transform .5s ease-in-out;
+    color: white;
+    font-family: 'Red Hat Text';
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.header_login:hover {
+    transform: scale(1.2);
 
 }
 
@@ -148,7 +175,7 @@ body {
     display: flex;
     align-items: center;
     list-style-type: none;
-    padding-right: 65px;
+    padding-right: 75px;
 
 }
 
@@ -161,27 +188,28 @@ body {
     color: #0D606F;
     transition: color 0.4s ease;
 }
+
 /* Header end */
+
+
+
+
 
 /* Preview start */
 .main {
 }
 .preview {
     height: 765px;
-    
 }
-.preview-bg-img {
-position: relative;
-z-index: -1;
 
-}
+/* .preview-bg-img {
+    position: relative;
+    z-index: -1;
+} */
 .bg_pic {
     width: 1440px;
     height: 765px;
-
-
 }
-
 
 .preview_content {
     display: flex;
@@ -191,6 +219,7 @@ z-index: -1;
     height: 422px;
     margin-left: 120px;
 }
+
 .preview_explore {
     font-family: 'Aleo';
     font-weight: bold;
@@ -199,8 +228,8 @@ z-index: -1;
     line-height: 94px;
     margin-top: 0px;
     margin-bottom: 0px;
-
 }
+
 .subtitle_preview {
     font-family: 'Aleo';
     font-style: italic;
@@ -210,6 +239,7 @@ z-index: -1;
     margin-top: 35px;
     margin-bottom: 0px;
 }
+
 .search {
     height: 95px;
     width: 892px;
@@ -217,12 +247,35 @@ z-index: -1;
     opacity: 0.7;
     border-radius: 16px;
     margin-top: 47px;
+}
+
+.search_button{
+    height: 59px;
+    width: 228px;
+    background-color: #0D606F;
+    border: 0px;
+    border-radius: 10px;
+    padding-top: 0px;
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    transition:         transform .5s ease-in-out;
+    color: white;
+    text-decoration: none;
+    font-family: 'Red Hat Text';
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.search_button:hover{
+    transform: scale(1.1);
 
 }
+
 .search_content {
     display: flex;
     align-items: center;
-    padding-top: 15px;
+    padding-top: 17px;
 }
 
 .search_content div + div {
@@ -235,14 +288,18 @@ z-index: -1;
     font-size: 24px;
     font-weight: 400;
     color: #F2785C;
-    width: 560px;
+    width: 605px;
     height: 22px;
     margin-left: 41px;
-    margin-top: 0px;
+    margin-top: 2px;
     margin-bottom: 12px;
 }
 
 /* Preview end */
+
+
+
+
 
 /* Steps start*/
 
@@ -277,6 +334,7 @@ z-index: -1;
     display: flex;
 }
 .step_item_one {
+    cursor: url('../img/plane.png'), default;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -285,6 +343,7 @@ z-index: -1;
     margin-right: 231px;
 }
 .step_item_two {
+    cursor: url('../img/plane.png'), default;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -293,6 +352,7 @@ z-index: -1;
     margin-right: 160px;
 }
 .step_item_three {
+    cursor: url('../img/plane.png'), default;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -311,8 +371,14 @@ z-index: -1;
     width: 611px;
     height: 53px;
     margin-bottom: 37px;
+
 }
+
 /* Steps end*/
+
+
+
+
 
 /*Destinatios start*/
 .destinations {
@@ -331,61 +397,279 @@ z-index: -1;
 }
 
 .slaider {
-    margin-bottom: 76px;
+    margin-bottom: 19px;
+}
+
+.dots{
+    width: 1440px;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 35px;
+}
+
+.btn_find_more_block{
+    padding-top: 7px;
+    width: 1440px;
 }
 
 .find_more_btn {
-    margin-left: 302px;
-    margin-bottom: 173px;
+    height: 59px;
+    width: 228px;
+    background-color: #0D606F;
+    border: 0px;
+    border-radius: 10px;
+    padding-top: 0px; 
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    transition:         transform .5s ease-in-out;
+    color: white;
+    text-decoration: none;
+    font-family: 'Red Hat Text';
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
+
+.find_more_btn:hover{
+    transform: scale(1.2);
+}
+
+.arrow{
+    margin-left: 27px;
+    margin-right: 10px;
+}
+
 /*Destinatios end*/
+
+
+
+
 
 /*Stories start*/
 
 .stories_content {
     margin-top: -1462px;
     width: 1445px;
-    height: 1270px;
-    background: rgba(255, 255, 255, 0.7);
-    
+    height: 1360px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.st_pic{
+    width: 400px;
+    cursor: url('../img/plane.png'), default;
+}
+.story_pic{
+    margin-top: 3px;
+    margin-left: -3px;
+    border-radius: 16px;
 }
 .container_st {
     margin-left: 120px;
     height: 1322px;
     width: 1201px;
-    background: rgba(255, 255, 255, 0.7);
+
 }
+
 .stories_title {
     font-family: 'Red Hat Text';
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
     color: #F2785C;
-    margin-left: 552px;
+    margin-left: 432px;
     margin-bottom: 80px;
 }
 
 .stories_color {
-    margin-top: 173px;
+    margin-top: 170px;
+    position: relative;
+    z-index: -1;
+    
+}
+
+.st_title{
+    font-family: 'Aleo';
+    font-weight: 400;
+    font-size: 35px;
+    color: #0D606F;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    line-height: 35px;
+}
+
+.st_content{
+    margin-left: 40px; 
+    margin-top: -27px;  
+}
+.story{
+    margin-bottom: 0px;
+    color: #0D606F;
+
 }
 .text {
     display: flex;
     flex-direction: column;
 }
 
+.read_more{
+    color: #0D606F;
+    font-weight: 700;
+}
+
 .item {
     display: flex;
+    margin-bottom: 15px;
+}
+
+.btn_see_more_block{
+    padding-top: 7px;
+    margin-left: -115px;
+    width: 1440px;
+}
+
+.see_more_button{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 59px;
+    width: 228px;
+    background-color: #0D606F;
+    border: 0px;
+    border-radius: 10px;
+    padding-top: 0px;
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    transition:         transform .5s ease-in-out;
+    color: white;
+    text-decoration: none;
+    font-family: 'Red Hat Text';
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.see_more_button:hover{
+    transform: scale(1.2);
 }
 
 
 /*Stories end*/
 
+
+
+
+
+/* Footer start */
+.footer{
+    height: 64px;
+    
+}
 .container_links {
     display: flex;
     
 }
 
-.icons {
+.my_links{
+    width: 500px;
+}
+
+.container_links{
+    width: 1440px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
+
+.github_pic{
+    height: 34px;
+}
+
+.rsschool_pic{
+    height: 33px;
+ 
+}
+
+.rights{
+    color: white;
+    font-family: 'Red Hat Text';
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: -10px;
+}
+
+.items_footer_left{
+    list-style-type: none;
+    display: flex;
+    margin-right: 198px;
+    margin-top: 15px;
+
+}
+
+.items_footer_right{
+    list-style-type: none;
+    display: flex;
+    margin-left: 198px;
+    margin-top: 15px;
+}
+
+.left_pic{
+    margin-right: 20px;
+}
+
+.right_pic + .right_pic {
+    margin-left: 20px;
+}
+
+.items_footer_right{
+    margin-right: 50px;
+}
+
+.rsschool_pic:hover{
+    transform: scale(1.1);
+}
+
+.github_pic:hover{
+    transform: scale(1.3);
+}
+
+
+
+.inst_pic{
+
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+            transition:         transform .5s ease-in-out;
+}
+.inst_pic:hover{
+
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.yt_pic{
+
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+            transition:         transform 1s ease-in-out;
+}
+.yt_pic:hover{
+    transform: scale(1.1);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+.tw_pic{
+
+    -webkit-transition: -webkit-transform 1.5s ease-in-out;
+            transition:         transform 1.5s ease-in-out;
+}
+.tw_pic:hover{
+
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+
+/* Footer start */
