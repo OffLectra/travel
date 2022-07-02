@@ -162,6 +162,8 @@ body {
     font-weight: 500;
     font-size: 16px;
     text-decoration: none;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .header_nav {
@@ -273,6 +275,8 @@ body {
     font-family: 'Red Hat Text';
     font-weight: 500;
     font-size: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .search_content {
@@ -445,6 +449,8 @@ body {
     font-family: 'Red Hat Text';
     font-weight: 500;
     font-size: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
 
 }
 /*Destinatios end*/
@@ -559,6 +565,8 @@ body {
     font-family: 'Red Hat Text';
     font-weight: 500;
     font-size: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
 
 }
 /*Stories end*/
