@@ -84,12 +84,12 @@
 
 *, *::before, *::after{
     box-sizing: border-box;
+
 }
 
 html{
     box-sizing: inherit;
     scroll-behavior: smooth;
-
 }
 
 body {
@@ -162,6 +162,11 @@ body {
 
 }
 
+.header_mn_link_mobile {
+    display: none;
+}
+
+
 .header_nav {
     font-family: 'Red Hat Text';
     font-weight: 500;
@@ -209,6 +214,8 @@ body {
 .bg_pic {
     width: 1440px;
     height: 765px;
+    /* background-size: cover;
+    max-width: 100%; */
 }
 
 .preview_content {
@@ -382,7 +389,7 @@ body {
 
 /*Destinatios start*/
 .destinations {
-    width: 2520px;
+    width: 1440px;
     height: 1042px;
 }
 
