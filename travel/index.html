@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/normalize.css-master/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/adaptive.css">
+    
     <title>Travel</title>
 </head>
 
@@ -15,6 +16,7 @@
 
 <body>
     <header class="header">
+        <div class="popup_bg"></div>
         <div class="wrapper">
             <div class="header_wrapper">
                 <div class="header-logo">
@@ -24,38 +26,40 @@
                 </div>
                 
                 
+                
                 <div class="header_mn">
-
-                    <a href="#" class="header_mn_link">
-                        <img src="./img/adaptive/mn_adapt.svg" alt="mn_pic" class="header_mn_pic">
-                    </a>
-                    
+                    <div class="header_mn_btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
                 
-                <div class="header_nav">
-                    <ul class="header_nav_list">
-                        <li class="header_nav_item"><a href="#how_it_works" class="header_nav_item_link">How It Works</a></li>
-                        <li class="header_nav_item"><a href="#plan_trip" class="header_nav_item_link">Plan Your Trip</a></li>
-                        <li class="header_nav_item"><a href="#destinations" class="header_nav_item_link">Destinations</a></li>
-                        <li class="header_nav_item"><a href="#stories" class="header_nav_item_link">Travel Stories</a></li>
-                    </ul>
-                </div>
+                
+                    <div class="header_nav">
+                        
+
+
+                        <nav class="header_nav_list">
+                            <li class="header_nav_item"><a href="#how_it_works" class="header_nav_item_link">How It Works</a></li>
+                            <li class="header_nav_item"><a href="#plan_trip" class="header_nav_item_link">Plan Your Trip</a></li>
+                            <li class="header_nav_item"><a href="#destinations" class="header_nav_item_link">Destinations</a></li>
+                            <li class="header_nav_item"><a href="#stories" class="header_nav_item_link">Travel Stories</a></li>
+                            <li class="header_nav_item_mobile"><a href="#account" class="header_nav_item_link_mobile">Account</a></li>
+                            <li class="header_nav_item_mobile"><a href="#soc_media" class="header_nav_item_link_mobile">Social Media</a></li>
+                        </nav>
+                    </div>
+                
+                
 
                 <button class="header_login" onClick='location.href="https://rs.school/js/"'>
                     Login
                 </button>
-<!-- 
-                <div class="header_mn">
-
-                    <a href="#" class="header_mn_link">
-                        <img src="./img/adaptive/mn_adapt.svg" alt="mn_pic" class="header_mn_pic">
-                    </a>
-                    
-                </div> -->
-
             </div>
         </div>
     </header>
+
+
 
 
     <main class="main">
@@ -259,6 +263,6 @@
     </main>
 
 
-    
+    <script src="script.js"></script>
 </body>
 </html>

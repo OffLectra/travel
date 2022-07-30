@@ -101,6 +101,7 @@ body {
     background-color: white;
     margin-left: auto;
     margin-right: auto;
+    /* overflow-x: hidden; */
 }
 
 /* Header start */
@@ -198,6 +199,9 @@ body {
     transition: color 0.4s ease;
 }
 
+.header_nav_item_mobile {
+    display: none;
+}
 /* Header end */
 
 
