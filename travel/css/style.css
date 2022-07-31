@@ -101,6 +101,7 @@ body {
     background-color: white;
     margin-left: auto;
     margin-right: auto;
+    /* overflow-x: hidden; */
 }
 
 /* Header start */
@@ -171,23 +172,42 @@ body {
 
 }
 
-.header_nav {
+/* .header_nav {
     font-family: 'Red Hat Text';
     font-weight: 500;
     font-size: 16px;
-}
+} */
 
+.close-x {
+    display: none;
+}
 .header_nav li + li {
     margin-left: 42px;
 }
 .header_nav_list {
+
     display: flex;
     align-items: center;
-    list-style-type: none;
-    padding-right: 75px;
+    padding-right: 0px;
+    width: 527px;
 
 }
 
+.header_nav_ulist{
+    font-family: 'Red Hat Text';
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 42px;
+    list-style-type: none;
+    margin-top: 0;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-top: 15px;
+    margin-left: -12px;
+
+}
 .header_nav_item_link {
     text-decoration: none;
     color: white;
@@ -198,6 +218,9 @@ body {
     transition: color 0.4s ease;
 }
 
+.header_nav_item_mobile {
+    display: none;
+}
 /* Header end */
 
 
