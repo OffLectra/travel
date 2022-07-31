@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zxx">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,25 +9,25 @@
     <link rel="stylesheet" href="./css/normalize.css-master/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/adaptive.css">
-    
+
     <title>Travel</title>
 </head>
 
 
 
 <body>
+    <div class="hidden"></div>
     <header class="header">
-        <div class="popup_bg"></div>
         <div class="wrapper">
             <div class="header_wrapper">
                 <div class="header-logo">
                     <a href="./index.html" class="header_logo_link">
-                        <img src="./img/logo.svg" alt="logo_pic" class="header_logo_pic"><img src="./img/TravelPortal.svg" alt="TravelPortal" class="travel_portal_words">
+                        <img src="./img/logo.svg" alt="logo_pic" class="header_logo_pic"><img
+                            src="./img/TravelPortal.svg" alt="TravelPortal" class="travel_portal_words">
                     </a>
                 </div>
-                
-                
-                
+
+
                 <div class="header_mn">
                     <div class="header_mn_btn">
                         <span></span>
@@ -35,22 +36,32 @@
                     </div>
                 </div>
                 
-                
-                    <div class="header_nav">
-                        
+                <nav class="header_nav_list">
+                    <img src="img/clarity_window-close-line.svg" alt="close-button" class="close-x">
+                    <ul class="header_nav_ulist">
+                        <li class="header_nav_item">
+                            <a href="#how_it_works" class="header_nav_item_link">How It Works</a>
+                        </li>
+                        <li class="header_nav_item">
+                            <a href="#plan_trip" class="header_nav_item_link">Plan Your Trip</a>
+                        </li>
+                        <li class="header_nav_item">
+                            <a href="#destinations" class="header_nav_item_link">Destinations</a>
+                        </li>
+                        <li class="header_nav_item">
+                            <a href="#stories" class="header_nav_item_link">Travel Stories</a>
+                        </li>
+                        <li class="header_nav_item_mobile">
+                            <a href="#account" class="header_nav_item_link_mobile">Account</a>
+                        </li>
+                        <li class="header_nav_item_mobile">
+                            <a href="#soc_media" class="header_nav_item_link_mobile">Social
+                                Media</a>
+                        </li>
+                    </ul>
+                </nav>
 
 
-                        <nav class="header_nav_list">
-                            <li class="header_nav_item"><a href="#how_it_works" class="header_nav_item_link">How It Works</a></li>
-                            <li class="header_nav_item"><a href="#plan_trip" class="header_nav_item_link">Plan Your Trip</a></li>
-                            <li class="header_nav_item"><a href="#destinations" class="header_nav_item_link">Destinations</a></li>
-                            <li class="header_nav_item"><a href="#stories" class="header_nav_item_link">Travel Stories</a></li>
-                            <li class="header_nav_item_mobile"><a href="#account" class="header_nav_item_link_mobile">Account</a></li>
-                            <li class="header_nav_item_mobile"><a href="#soc_media" class="header_nav_item_link_mobile">Social Media</a></li>
-                        </nav>
-                    </div>
-                
-                
 
                 <button class="header_login" onClick='location.href="https://rs.school/js/"'>
                     Login
@@ -69,14 +80,15 @@
                 <div class="adapt_preview_cont">
 
                     <picture>
-                        <source srcset="./img/adaptive/bg.jpg" type="image/jpeg" media="(max-width:391px)" >
+                        <source srcset="./img/adaptive/bg.jpg" type="image/jpeg" media="(max-width:391px)">
                         <img src="./img/preview_bg.jpg" alt="bg_pic" class="bg_pic">
                     </picture>
                 </div>
 
                 <div class="preview_content">
                     <h1 class="preview_explore"><a id="how_it_works">Explore the beauty of the World</a></h1>
-                    <p class="subtitle_preview">Receive personalized recommendations for countries, hotels, activities and more</p>
+                    <p class="subtitle_preview">Receive personalized recommendations for countries, hotels, activities
+                        and more</p>
                     <div class="search">
                         <div class="search_content">
                             <div class="search_text">What would you like to do?</div>
@@ -142,28 +154,19 @@
             </div>
         </section>
 
-        <!-- <div class="adapt_preview_cont">
-
-            <picture>
-                <source srcset="./img/adaptive/bg.jpg" type="image/jpeg" media="(max-width:391px)" >
-                <img src="./img/preview_bg.jpg" alt="bg_pic" class="bg_pic">
-            </picture>
-        </div> -->
-
-
         <section class="stories">
             <div class="st_t">
                 <h2 class="stories_title"><a id="stories">TRAVEL STORIES</a></h2>
             </div>
-            
+
             <picture class="bg_st_picture">
                 <source srcset="img/adaptive/bg_st.jpg" type="image/jpeg" media="(max-width:391px)">
                 <img srcset="img/bg_bg.jpg" alt="bg_stories" class="stories_color">
             </picture>
-            
+
             <div class="stories_content">
                 <div class="container_st">
-                    
+
                     <div class="text">
                         <div class="item">
                             <div class="st_pic">
@@ -174,9 +177,20 @@
                             </div>
                             <div class="st_content">
                                 <h3 class="st_title">10 Photos of Attractive Thailand</h3>
-                                <p class="story">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <br><a href="#!" class="read_more">Read More</a>
+                                <p class="story">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                    officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit... <br><a href="#!" class="read_more">Read More</a>
                                 </p>
-                                <p class="story_adapt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a... <br><a href="#!" class="read_more_adapt">Read More</a>
+                                <p class="story_adapt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla.Lorem ipsum dolor sit a... <br><a href="#!"
+                                        class="read_more_adapt">Read More</a>
                                 </p>
                             </div>
                         </div>
@@ -190,8 +204,19 @@
                             </div>
                             <div class="st_content">
                                 <h3 class="st_title">Canyonlands National Park, Utah</h3>
-                                <p class="story">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <br><a href="#!" class="read_more">Read More</a></p>
-                                <p class="story_adapt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a... <br><a href="#!" class="read_more_adapt">Read More</a>
+                                <p class="story">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                    officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit... <br><a href="#!" class="read_more">Read More</a></p>
+                                <p class="story_adapt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla.Lorem ipsum dolor sit a... <br><a href="#!"
+                                        class="read_more_adapt">Read More</a>
                                 </p>
                             </div>
                         </div>
@@ -206,8 +231,19 @@
                             <!-- <div class="st_pic"><img src="./img/moun.jpg" alt="mountain" class="story_pic"></div> -->
                             <div class="st_content">
                                 <h3 class="st_title">I left my heart in the Mountains!</h3>
-                                <p class="story">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <br><a href="#!" class="read_more">Read More</a></p>
-                                <p class="story_adapt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a... <br><a href="#!" class="read_more_adapt">Read More</a>
+                                <p class="story">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                    officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit... <br><a href="#!" class="read_more">Read More</a></p>
+                                <p class="story_adapt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla.Lorem ipsum dolor sit a... <br><a href="#!"
+                                        class="read_more_adapt">Read More</a>
                                 </p>
                             </div>
                         </div>
@@ -220,11 +256,22 @@
                                 </picture>
                             </div>
                             <!-- <div class="st_pic"><img src="./img/life.jpg" alt="life" class="story_pic"></div> -->
-                            
+
                             <div class="st_content">
                                 <h3 class="st_title">The Longest journey in my life!</h3>
-                                <p class="story">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <br><a href="#!" class="read_more">Read More</a></p>
-                                <p class="story_adapt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a... <br><a href="#!" class="read_more_adapt">Read More</a>
+                                <p class="story">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                    officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit... <br><a href="#!" class="read_more">Read More</a></p>
+                                <p class="story_adapt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla.Lorem ipsum dolor sit a... <br><a href="#!"
+                                        class="read_more_adapt">Read More</a>
                                 </p>
                             </div>
                         </div>
@@ -241,18 +288,28 @@
                         <div class="container_links">
                             <div class="my_links">
                                 <ul class="items_footer_left">
-                                    <li class="left_pic"><a href="https://rs.school/js/" class="rss_link" target="_blank"><img src="./img/rs_school_js.svg" alt="rsschool" class="rsschool_pic"></a></li>
-                                    <li class="left_pic"><a href="https://github.com/OffLectra" class="git_link" target="_blank"><img src="./img/github.svg" alt="github" class="github_pic"></a></li>
+                                    <li class="left_pic"><a href="https://rs.school/js/" class="rss_link"
+                                            target="_blank"><img src="./img/rs_school_js.svg" alt="rsschool"
+                                                class="rsschool_pic"></a></li>
+                                    <li class="left_pic"><a href="https://github.com/OffLectra" class="git_link"
+                                            target="_blank"><img src="./img/github.svg" alt="github"
+                                                class="github_pic"></a></li>
                                 </ul>
                             </div>
-                
+
                             <div class="rights">All Rights Reserved © Travel Portal</div>
-                
+
                             <div class="my_links_">
                                 <ul class="items_footer_right">
-                                    <li class="right_pic"><a href="https://www.instagram.com" class="inst_link" target="_blank"><img src="./img/akar-icons_instagram-fill.svg" alt="inst" class="inst_pic"></a></li>
-                                    <li class="right_pic"><a href="https://www.youtube.com" class="yt_link" target="_blank"><img src="./img/akar-icons_video.svg" alt="yt" class="yt_pic"></a></li>
-                                    <li class="right_pic"><a href="https://twitter.com" class="tw_link" target="_blank"><img src="./img/akar-icons_twitter-fill.svg" alt="twitter" class="tw_pic"></a></li>
+                                    <li class="right_pic"><a href="https://www.instagram.com" class="inst_link"
+                                            target="_blank"><img src="./img/akar-icons_instagram-fill.svg" alt="inst"
+                                                class="inst_pic"></a></li>
+                                    <li class="right_pic"><a href="https://www.youtube.com" class="yt_link"
+                                            target="_blank"><img src="./img/akar-icons_video.svg" alt="yt"
+                                                class="yt_pic"></a></li>
+                                    <li class="right_pic"><a href="https://twitter.com" class="tw_link"
+                                            target="_blank"><img src="./img/akar-icons_twitter-fill.svg" alt="twitter"
+                                                class="tw_pic"></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -265,4 +322,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
