@@ -22,57 +22,67 @@
 
 
 // const div = document.querySelector('#popup');
- 
+
 // document.addEventListener( 'click', (e) => {
 //   const withinBoundaries = e.composedPath().includes(div);
- 
+
 //   if ( ! withinBoundaries ) {
 //     div.style.display = 'none'; // скрываем элемент т к клик был за его пределами
 //   }
 // })
-const burger = document.querySelector('.header_mn');
-const closeX = document.querySelector('.close-x');
-const burgerMenu = document.querySelector('.header_nav_list');
-const hidden = document.querySelector('.hidden');
 
-burger.addEventListener("click", elementClick); // блокировка скролла, открытие бургер меню, появляется фон
-function elementClick(e){
-  e.preventDefault();
-  document.body.classList.add('_lock');
-  burgerMenu.classList.toggle('_open');
-  hidden.classList.toggle('_active');
-}
 
-closeX.addEventListener("click", elementClick); // разблокировка скролла, закрывает бургер меню, скрывает фон
-function elementClick(e){
-  e.preventDefault();
-  document.body.classList.add('_lock');
-  burgerMenu.classList.toggle('_open');
-  hidden.classList.toggle('_active');
-}
 
-hidden.addEventListener("click", elementClick); // разблокирует скролл, закрывает бургер меню, скрывает вон
-function elementClick(e){
-  e.preventDefault();
-  document.body.classList.add('_lock');
-  burgerMenu.classList.toggle('_open');
-  hidden.classList.toggle('_active');
-}
 
-document.addEventListener("click", function(e) { // разблокирует скролл, закрывает бургер меню, скрывает фон
 
-    if (e.target.className=="header_nav_item_link") {
-        document.body.classList.toggle('_lock');
-        burgerMenu.classList.toggle('_open');
-        hidden.classList.toggle('_active');
-    }
 
-    if (e.target.className=="header_nav_item_link_mobile") {
-        document.body.classList.toggle('_lock');
-        burgerMenu.classList.toggle('_open');
-        hidden.classList.toggle('_active');
-    }
-});
+/* это начало рабочего блока бургера*/
+// const burger = document.querySelector('.header_mn');
+// const closeX = document.querySelector('.close-x');
+// const burgerMenu = document.querySelector('.header_nav_list');
+// const hidden = document.querySelector('.hidden');
+
+// burger.addEventListener("click", elementClick); // блокировка скролла, открытие бургер меню, появляется фон
+// function elementClick(e){
+//   e.preventDefault();
+//   document.body.classList.add('_lock');
+//   burgerMenu.classList.toggle('_open');
+//   hidden.classList.toggle('_active');
+// }
+
+// closeX.addEventListener("click", elementClick); // разблокировка скролла, закрывает бургер меню, скрывает фон
+// function elementClick(e){
+//   e.preventDefault();
+//   document.body.classList.add('_lock');
+//   burgerMenu.classList.toggle('_open');
+//   hidden.classList.toggle('_active');
+// }
+
+// hidden.addEventListener("click", elementClick); // разблокирует скролл, закрывает бургер меню, скрывает вон
+// function elementClick(e){
+//   e.preventDefault();
+//   document.body.classList.add('_lock');
+//   burgerMenu.classList.toggle('_open');
+//   hidden.classList.toggle('_active');
+// }
+
+// document.addEventListener("click", function(e) { // разблокирует скролл, закрывает бургер меню, скрывает фон
+
+//     if (e.target.className=="header_nav_item_link") {
+//         document.body.classList.toggle('_lock');
+//         burgerMenu.classList.toggle('_open');
+//         hidden.classList.toggle('_active');
+//     }
+
+//     if (e.target.className=="header_nav_item_link_mobile") {
+//         document.body.classList.toggle('_lock');
+//         burgerMenu.classList.toggle('_open');
+//         hidden.classList.toggle('_active');
+//     }
+// });
+/* это конец рабочего блока бургера, раскоммент только этого блока */
+
+
 
 // const menu_Links = document.querySelectorAll('.header_nav_item_link[data-goto]');
 // menu_Links.forEach(menuLink => {
@@ -84,3 +94,29 @@ document.addEventListener("click", function(e) { // разблокирует с�
 //     menuLink.addEventListener("click", onMenuClick);
 // });
 
+
+
+/* _____СЛАЙДЕР_2(swiper)_____ */
+
+var swiper = new Swiper('.swiper', {
+  slidesPerView: 'auto',
+  spaceBetween: 0,
+  centeredSlides: true,
+  grabCursor: true,
+  loop: true,
+
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false
+  },
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
