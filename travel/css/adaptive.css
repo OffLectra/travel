@@ -1,7 +1,7 @@
 .menu__icon {
     display: none;
 }
-#adaptive_links {
+.adaptive_links {
     display: none;
 }
 @media (max-width: 1040px) {
