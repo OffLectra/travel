@@ -88,9 +88,6 @@ button {
     width: 100%;
     padding: 0px;
 }
-.navigation__item {
-    
-}
 .item-link {
     text-decoration: none;
     font-family: 'Red Hat Text';
@@ -129,13 +126,6 @@ button {
     position: relative;
     top: 0px;
 }
-/* .preview__bg-img {
-    width: 100%;
-    position: absolute;
-    z-index: -10;
-    top: 0px;
-    background-size: cover;
-} */
 .preview__bg-block {
     background-image: url('../img/preview_background.png');
     width: 100%;
@@ -149,6 +139,8 @@ button {
     width: 75%;
     padding-top: 120px;
     position: relative;
+    /* margin: 0 auto; */
+    will-change: 100%;
 }
 .preview__title {
     font-family: 'Aleo';
@@ -278,7 +270,6 @@ button {
     text-align: center;
     margin-bottom: 50px;
 }
-
 .steps__button-block {
     height: auto;
     width: 100%;
@@ -390,7 +381,6 @@ button {
 .bg-lighter {
     background: rgba(255, 255, 255, 0.6);
     height: 1270px;
-
 }
 .stories__title {
     font-family: 'Red Hat Text';
@@ -406,17 +396,16 @@ button {
     height: 1170px;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     gap: 30px;
     padding-top: 40px;
     padding-bottom: 40px;
-    
 }
 .stories__story {
     height: 250px;
     display: flex;
     align-items: flex-start;
     gap: 40px;
+    justify-content: center;
 }
 .story__photo-block {
     height: 250px;
@@ -429,7 +418,6 @@ button {
     background-size: cover;
     width: 100%;
     height: auto;
-
 }
 .story__text-block {
     width: 100%;
@@ -447,20 +435,21 @@ button {
     color: #0D606F;
     line-height: 35px;
     margin-bottom: 25px;
-
 }
 .story-text {
-    /* margin-bottom: 0px; */
     color: #0D606F;
     font-family: 'Aleo';
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    height: 100%;
+    height: 70%;
 }
-.story-text::-webkit-scrollbar {
-    width: 0;
-  }
+.story__text-block::-webkit-scrollbar {
+    /* width: 0; */
+    display: none;
+}
+
+
 .story-link {
     color: #0D606F;
     font-weight: 700;
@@ -549,9 +538,7 @@ button {
     align-items: center;
     padding-right: 0px;
     width: 527px;
-
 }
-
 .header_nav_ulist{
     font-family: 'Red Hat Text';
     font-weight: 500;
@@ -565,18 +552,15 @@ button {
     padding-left: 0px;
     margin-top: 15px;
     margin-left: -12px;
-
 }
 .header_nav_item_link {
     text-decoration: none;
     color: white;
 }
-
 .header_nav a:hover {
     color: #0D606F;
     transition: color 0.4s ease;
 }
-
 .header_nav_item_mobile {
     display: none;
 } */
@@ -606,7 +590,6 @@ button {
     height: 422px;
     margin-left: 120px;
 }
-
 .preview_explore {
     font-family: 'Aleo';
     font-weight: bold;
@@ -616,7 +599,6 @@ button {
     margin-top: 0px;
     margin-bottom: 0px;
 }
-
 .subtitle_preview {
     font-family: 'Aleo';
     font-style: italic;
@@ -626,7 +608,6 @@ button {
     margin-top: 35px;
     margin-bottom: 0px;
 }
-
 .search {
     height: 95px;
     width: 892px;
@@ -635,7 +616,6 @@ button {
     border-radius: 16px;
     margin-top: 47px;
 }
-
 .search_button{
     height: 59px;
     width: 228px;
@@ -653,22 +633,18 @@ button {
     margin-top: auto;
     margin-bottom: auto;
 }
-
 .search_button:hover{
     transform: scale(1.1);
 
 }
-
 .search_content {
     display: flex;
     align-items: center;
     padding-top: 17px;
 }
-
 .search_content div + div {
     margin-left: 45px;
 }
-
 .search_text {
     font-family: 'Aleo';
     font-style: italic;
@@ -772,7 +748,6 @@ button {
     width: 1440px;
     height: 1042px;
 }
-
 .dest_title {
     font-family: 'Red Hat Text';
     font-style: normal;
@@ -782,23 +757,19 @@ button {
     margin-left: 470px;
     margin-bottom: 49px;
 }
-
 .slaider {
     margin-bottom: 19px;
 }
-
 .dots{
     width: 1440px;
    display: flex;
    justify-content: center;
    margin-bottom: 35px;
 }
-
 .btn_find_more_block{
     padding-top: 7px;
     width: 1440px;
 }
-
 .find_more_btn {
     height: 59px;
     width: 228px;
@@ -820,16 +791,13 @@ button {
     margin-top: auto;
     margin-bottom: auto;
 }
-
 .find_more_btn:hover{
     transform: scale(1.2);
 }
-
 .arrow{
     margin-left: 27px;
     margin-right: 10px;
 } */
-
 /*Destinatios end*/
 
 
@@ -843,7 +811,6 @@ button {
     width: 1440px;
     height: 1363px;
 }
-
 .stories_content {
     margin-top: -1338px;
     width: 1440px;
@@ -866,7 +833,6 @@ button {
     width: 1201px;
     padding-top: 38px;
 }
-
 .stories_title {
     font-family: 'Red Hat Text';
     font-style: normal;
@@ -877,14 +843,11 @@ button {
     margin-bottom: 43px;
     margin-top: 80px;
 }
-
 .stories_color {
     margin-top: 0px;
     position: relative;
     z-index: -1;
-    
 }
-
 .st_title{
     font-family: 'Aleo';
     font-weight: 400;
@@ -894,7 +857,6 @@ button {
     margin-bottom: 28px;
     line-height: 35px;
 }
-
 .st_content{
     margin-left: 40px; 
     margin-top: 0px;  
@@ -908,7 +870,6 @@ button {
     font-size: 20px;
     line-height: 24px;
 }
-
 .story_adapt {
     display: none;
 }
@@ -916,23 +877,19 @@ button {
     display: flex;
     flex-direction: column;
 }
-
 .read_more{
     color: #0D606F;
     font-weight: 700;
 }
-
 .item {
     display: flex;
     margin-bottom: 13px;
 }
-
 .btn_see_more_block{
     padding-top: 12px;
     margin-left: -120px;
     width: 1440px;
 }
-
 .see_more_button{
     display: flex;
     align-items: center;
@@ -957,12 +914,10 @@ button {
 .see_more_button:hover{
     transform: scale(1.2);
 }
-
 .bg_st_picture {
     height: 0px;
     font-size: 0px;
 }
-
 picture {
     height: 0px;
     width: 0px;
@@ -979,34 +934,26 @@ picture {
     width: 1201px;
     margin-top: 40px;   
 }
-
 .my_links {
     width: 150px;
     height: 61px;
 }
-
 .my_links_{
     width: 150px;
     height: 61px;
 }
-
 .container_links{
     width: 1201px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
-
 .github_pic{
     height: 34px;
 }
-
 .rsschool_pic{
     height: 33px;
- 
 }
-
 .rights{
     color: white;
     font-family: 'Red Hat Text';
@@ -1014,57 +961,41 @@ picture {
     font-size: 16px;
     margin-top: 0px;
 }
-
 .items_footer_left{
     list-style-type: none;
     display: flex;
     margin-right: 0px;
     margin-top: 15px;
     margin-bottom: 0px;
-
 }
-
 .items_footer_right{
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
     margin-top: 15px;
     margin-bottom: 0px;
-
-
 }
-
 .left_pic{
     margin-right: 20px;
 }
-
 .right_pic + .right_pic {
     margin-left: 20px;
 }
-
 .rsschool_pic:hover{
     transform: scale(1.1);
 }
-
 .github_pic:hover{
     transform: scale(1.3);
 }
-
-
-
 .inst_pic{
-
     -webkit-transition: -webkit-transform .5s ease-in-out;
             transition:         transform .5s ease-in-out;
 }
 .inst_pic:hover{
-
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
 }
-
 .yt_pic{
-
     -webkit-transition: -webkit-transform 1s ease-in-out;
             transition:         transform 1s ease-in-out;
 }
@@ -1074,7 +1005,6 @@ picture {
     transform: rotate(360deg);
 }
 .tw_pic{
-
     -webkit-transition: -webkit-transform 1.5s ease-in-out;
             transition:         transform 1.5s ease-in-out;
 }
@@ -1084,10 +1014,6 @@ picture {
     transform: rotate(360deg);
 } */
 
-
 /* Footer start */
-
-
-
 
 
