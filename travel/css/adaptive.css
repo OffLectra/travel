@@ -2,7 +2,7 @@
     display: none;
 }
 #adaptive_links {
-    display: none !important;
+    display: none;
 }
 @media (max-width: 1040px) {
     .menu__icon {
