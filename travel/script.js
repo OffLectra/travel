@@ -120,3 +120,43 @@ var swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+
+
+/* _____BURGER-MENU_____ */
+
+const menu = document.querySelector('.header__menu');
+const menuBtn = document.querySelector('.menu__icon');
+
+const body = document.querySelector('body');
+
+const bg = document.querySelector('.dark__bg');
+
+
+if (menu && menuBtn) {
+  menuBtn.addEventListener('click', e => {
+    menu.classList.toggle('active')    //открываем меню
+    menuBtn.classList.toggle('active') //делаем крестик из иконки
+    body.classList.toggle('lock')      //блокируем прокрутку экрана
+    bg.classList.toggle('active')      //включаем затемнение
+    
+  })
+
+  bg.addEventListener('click', e => {
+    if(e.target.classList.contains('dark__bg')) {
+      menu.classList.remove('active')
+      menuBtn.classList.remove('active')
+      body.classList.remove('lock')
+      bg.classList.remove('active')
+    }
+  })
+
+  menu.querySelectorAll('.item-link').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.remove('active')
+      menuBtn.classList.remove('active')
+      body.classList.remove('lock')
+      bg.classList.remove('active')
+    })
+  })
+}
