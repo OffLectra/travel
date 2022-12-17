@@ -106,12 +106,23 @@
 
             <div class="popup" id="create__popup">
                 <div class="popup__body">
-                    <div class="create__content">
-                        <div class="create__title">Create account</div>
-                        <div class="email-form__block"></div>
-                        <div class="signUp-btn__block"></div>
-                        <div class="line"></div>
-                        <div class="login__block"></div>
+                    <div class="popup__content">
+                        <div class="popup__title">Create account</div>
+                        <form>
+                            <div class="form-group">
+                                <label for="email-input" class="form-group-label">E-mail</label>
+                                <input class="form-control item" id="email-input" type="email" name="email" id="email" placeholder="" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password-input" class="form-group-label">Password</label>
+                                <input class="form-control item" id="password-input" type="password" name="Пароль" minlength="6" id="password" placeholder="" required>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-primary btn-block create-account" type="submit">Sign In</button>
+                            </div>
+                        </form>
+                        <hr class="forgot-line">
+                        <div class="register__block">Already have an account?&nbsp<div class="reg-link">Log in</div></div>
                     </div>
                 </div>
             </div>

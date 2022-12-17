@@ -136,7 +136,13 @@ button {
 .popup {
     position: absolute;
     padding: 25px 45px 25px 45px;
-    /* display: ; */
+    top: 100px;
+    right: 0px;
+    width: 100%;
+    max-width: 650px;
+    background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
 }
 @media (max-width: 450px) {
     .popup {
@@ -144,14 +150,9 @@ button {
     }
 }
 #login__popup {
-    top: 100px;
-    right: 0px;
-    width: 100%;
-    max-width: 650px;
+
     height: 660px;
-    background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 16px;
+    display: none;
 }
 .popup__body {
     width: 100%;
@@ -318,7 +319,7 @@ button {
 
 
 #create__popup {
-    display: none;
+    display: block;
 }
 
 
