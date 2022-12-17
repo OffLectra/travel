@@ -47,9 +47,6 @@
         bottom: 25%;
         height: 3.5px;
     }
-    .header__menu-block {
-        
-    }
     .header__menu {
         position: absolute;
         width: 165px;
@@ -478,10 +475,6 @@
     }
     .story__photo-block {
         max-width: 190px;
-
-    }
-    .story-img {
-
     }
     .story__text-block {
         width: 100%;
