@@ -17,9 +17,9 @@
     .helper-icon {
         width: 35px;
         height: 100%;
-        /* position: relative; */
+        position: relative;
         z-index: 33;
-        position: absolute;
+        /* position: absolute; */
         top: 0;
         right: 0;
     }

@@ -138,12 +138,14 @@ if (menu && menuBtn) {
   menuBtn.addEventListener('click', e => {
     menu.classList.add('active')    //открываем меню
     menuBtn.classList.add('active') //делаем крестик из иконки
-    // body.classList.toggle('lock')      //блокируем прокрутку экрана
+    body.classList.toggle('lock')      //блокируем прокрутку экрана
     bg.classList.add('active')      //включаем затемнение
+    login.classList.remove('active')
+    reg.classList.remove('active')
     if(e.target.classList.contains('active')) {
       menu.classList.remove('active')
       menuBtn.classList.remove('active')
-      // body.classList.remove('lock')
+      body.classList.remove('lock')
       bg.classList.remove('active')
       login.classList.remove('active')
       reg.classList.remove('active')
@@ -156,7 +158,7 @@ if (menu && menuBtn) {
     if(e.target.classList.contains('dark__bg')) {
       menu.classList.remove('active')
       menuBtn.classList.remove('active')
-      // body.classList.remove('lock')
+      body.classList.remove('lock')
       bg.classList.remove('active')
     }
   })
