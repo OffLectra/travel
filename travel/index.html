@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/icon_plane.png">
-    <link rel="stylesheet" href="./css/normalize.css-master/normalize.css">
+    <link rel="stylesheet" href="./css/normalize/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/adaptive.css">
     <link rel="stylesheet" href="./css/fonts.css">
@@ -36,6 +36,7 @@
                             <span id="menu__icon__span"></span>
                             <span id="menu__icon__span"></span>
                         </div>
+                        <!-- <div class="helper-icon"></div> -->
                         <div class="header__menu">
                             <div class="menu__icon__cross-block">
                                 <div class="cross">
@@ -60,10 +61,10 @@
     
                                     <!-- Дополнительные пункты менюшки -->
                                     <li class="navigation__item adaptive_links">
-                                        <a href="#" class="item-link">Account</a>
+                                        <a href="#" class="item-link social">Account</a>
                                     </li>
                                     <li class="navigation__item adaptive_links">
-                                        <a href="#" class="item-link">Social Media</a>
+                                        <a href="#social_media" class="item-link">Social Media</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -74,58 +75,8 @@
                     </div>
                 </div>
             </div>
-            <div class="popup" id="login__popup">
-                <div class="popup__body">
-                    <div class="popup__content">
-                        <div class="popup__title">Log in to your account</div>
-                        <button class="sign-btn__fb-block"><img src="./img/fb.png" alt="" class="fb">Sign In with Facebook</button>
-                        <div class="sign-btn__gg-block"><img src="./img/gg.png" alt="" class="gg">Sign In with Google</div>
-                        <div class="or-block"><hr class="or-line">or<hr class="or-line"></div>
-                        <form>
-                            <div class="form-group">
-                                <label for="email-input" class="form-group-label">E-mail</label>
-                                <input class="form-control item" id="email-input" type="email" name="email" id="email" placeholder="" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="password-input" class="form-group-label">Password</label>
-                                <input class="form-control item" id="password-input" type="password" name="Пароль" minlength="6" id="password" placeholder="" required>
-                            </div>
-                            <div class="form-group">
-                                <button class="btn btn-primary btn-block create-account" type="submit">Sign In</button>
-                            </div>
-                        </form>
-                        <div class="forgot-link__block"> 
-                            <div class="forgot-link">Forgot Your Password?</div>
-                        </div>
-                        <hr class="forgot-line">
-                        <div class="register__block">Don’t have an account?&nbsp<div class="reg-link">Register</div></div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="popup" id="create__popup">
-                <div class="popup__body">
-                    <div class="popup__content">
-                        <div class="popup__title">Create account</div>
-                        <form>
-                            <div class="form-group">
-                                <label for="email-input" class="form-group-label">E-mail</label>
-                                <input class="form-control item" id="email-input" type="email" name="email" id="email" placeholder="" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="password-input" class="form-group-label">Password</label>
-                                <input class="form-control item" id="password-input" type="password" name="Пароль" minlength="6" id="password" placeholder="" required>
-                            </div>
-                            <div class="form-group">
-                                <button class="btn btn-primary btn-block create-account" type="submit">Sign In</button>
-                            </div>
-                        </form>
-                        <hr class="forgot-line">
-                        <div class="register__block">Already have an account?&nbsp<div class="reg-link">Log in</div></div>
-                    </div>
-                </div>
-            </div>
+            
+           
         </header>
     
 
@@ -290,7 +241,7 @@
     
                         <!--FOOTER-->
                         <div class="wrapper">
-                            <footer class="footer">
+                            <footer class="footer" id="social_media">
                                 <div class="footer__left-block">
                                     <a href="https://github.com/OffLectra" class="block_link" target="_blank">
                                         <img src="img/git.png" alt="git" class="git-img">
@@ -326,7 +277,59 @@
             </section>
         </main>
 
-        <div class="dark__bg"></div>
+        <div class="dark__bg">
+            <div class="popup" id="login__popup">
+                <div class="popup__body">
+                    <div class="popup__content">
+                        <div class="popup__title">Log in to your account</div>
+                        <button class="sign-btn__fb-block"><img src="./img/fb.png" alt="" class="fb">Sign In with Facebook</button>
+                        <button class="sign-btn__gg-block"><img src="./img/gg.png" alt="" class="gg">Sign In with Google</button>
+                        <div class="or-block"><hr class="or-line">or<hr class="or-line"></div>
+                        <form>
+                            <div class="form-group">
+                                <label for="email-input" class="form-group-label">E-mail</label>
+                                <input class="form-control item" id="email-input" type="email" name="email" id="email" placeholder="" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password-input" class="form-group-label">Password</label>
+                                <input class="form-control item" id="password-input" type="password" name="Пароль" minlength="6" id="password" placeholder="" required>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-primary btn-block create-account" type="submit">Sign In</button>
+                            </div>
+                        </form>
+                        <div class="forgot-link__block"> 
+                            <div class="forgot-link">Forgot Your Password?</div>
+                        </div>
+                        <hr class="forgot-line">
+                        <div class="register__block">Don’t have an account?&nbsp<div class="reg-link login-reg-link">Register</div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup" id="create__popup">
+                <div class="popup__body">
+                    <div class="popup__content">
+                        <div class="popup__title">Create account</div>
+                        <form>
+                            <div class="form-group">
+                                <label for="email-input" class="form-group-label">E-mail</label>
+                                <input class="form-control item" id="email-input" type="email" name="email" id="email" placeholder="" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password-input" class="form-group-label">Password</label>
+                                <input class="form-control item" id="password-input" type="password" name="Пароль" minlength="6" id="password" placeholder="" required>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-primary btn-block create-account" type="submit">Sign Up</button>
+                            </div>
+                        </form>
+                        <hr class="forgot-line">
+                        <div class="register__block">Already have an account?&nbsp<div class="reg-link create-reg-link">Log in</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>

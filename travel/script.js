@@ -127,36 +127,174 @@ var swiper = new Swiper('.swiper', {
 
 const menu = document.querySelector('.header__menu');
 const menuBtn = document.querySelector('.menu__icon');
-
 const body = document.querySelector('body');
-
 const bg = document.querySelector('.dark__bg');
+const accountBtn = document.querySelector('.social');
+const login = document.querySelector('#login__popup');
+const reg = document.querySelector('#create__popup');
 
 
 if (menu && menuBtn) {
   menuBtn.addEventListener('click', e => {
-    menu.classList.toggle('active')    //открываем меню
-    menuBtn.classList.toggle('active') //делаем крестик из иконки
-    body.classList.toggle('lock')      //блокируем прокрутку экрана
-    bg.classList.toggle('active')      //включаем затемнение
-    
+    menu.classList.add('active')    //открываем меню
+    menuBtn.classList.add('active') //делаем крестик из иконки
+    // body.classList.toggle('lock')      //блокируем прокрутку экрана
+    bg.classList.add('active')      //включаем затемнение
+    if(e.target.classList.contains('active')) {
+      menu.classList.remove('active')
+      menuBtn.classList.remove('active')
+      // body.classList.remove('lock')
+      bg.classList.remove('active')
+      login.classList.remove('active')
+      reg.classList.remove('active')
+    }
+
+
+
   })
 
   bg.addEventListener('click', e => {
     if(e.target.classList.contains('dark__bg')) {
       menu.classList.remove('active')
       menuBtn.classList.remove('active')
-      body.classList.remove('lock')
+      // body.classList.remove('lock')
       bg.classList.remove('active')
     }
   })
 
   menu.querySelectorAll('.item-link').forEach(link => {
-    link.addEventListener('click', () => {
+    link.addEventListener('click', link => {
       menu.classList.remove('active')
       menuBtn.classList.remove('active')
       body.classList.remove('lock')
       bg.classList.remove('active')
     })
   })
+
+  accountBtn.addEventListener('click', e => {
+      // alert('hi')
+      menu.classList.remove('active')
+      menuBtn.classList.toggle('active')
+      // body.classList.remove('lock')
+      // bg.classList.remove('active')
+      bg.classList.toggle('active')      //включаем затемнение
+      login.classList.toggle('active')   //открываем меню
+  })
 }
+
+
+/* _____LOGIN-POPUP_____ */
+const loginBtn = document.querySelector('.button__login');
+
+
+if (login && loginBtn) {
+  loginBtn.addEventListener('click', e => {
+    login.classList.toggle('active')   //открываем меню
+    body.classList.toggle('lock')      //блокируем прокрутку экрана
+    bg.classList.toggle('active')      //включаем затемнение
+  })
+
+  bg.addEventListener('click', e => {
+    if(e.target.classList.contains('dark__bg')) {
+      login.classList.remove('active')
+      loginBtn.classList.remove('active')
+      body.classList.remove('lock')
+      bg.classList.remove('active')
+    }
+  })
+}
+
+
+/* _____CREATE-POPUP_____ */
+const regBtn = document.querySelector('.login-reg-link');
+
+
+if (reg && regBtn) {
+    regBtn.addEventListener('click', e => {
+    login.classList.remove('active')
+    reg.classList.toggle('active')
+  })
+
+  bg.addEventListener('click', e => {
+    if(e.target.classList.contains('dark__bg')) {
+      reg.classList.remove('active')
+      regBtn.classList.remove('active')
+      body.classList.remove('lock')
+      bg.classList.remove('active')
+    }
+  })
+}
+
+/* _____Открыть попап по клику по попапу_____ */
+const regBtnCreate = document.querySelector('.create-reg-link');
+if (login && regBtnCreate) {
+    regBtnCreate.addEventListener('click', e => {
+      reg.classList.remove('active')
+      login.classList.toggle('active')    //открываем меню
+  })
+
+  bg.addEventListener('click', e => {
+    if(e.target.classList.contains('dark__bg')) {
+      login.classList.remove('active')
+      regBtnCreate.classList.remove('active')
+      body.classList.remove('lock')
+      bg.classList.remove('active')
+    }
+  })
+}
+
+
+
+// /* _____ACCOUNT_____ */
+// const accountBtn = document.querySelector('.social');
+
+
+// if (accountBtn && login && menuBtn) {
+//   accountBtn.addEventListener('click', e => {  //вешаем обработчик событий на account
+//     // menu.classList.remove('active')            //закрывваем меню
+//     login.classList.toggle('active')           //открываем логин попап
+//     // body.classList.toggle('lock')              //блокируем прокрутку экрана
+//     bg.classList.toggle('active')              //включаем затемнение
+//     menuBtn.classList.toggle('active')         //оставляем крестик на кнопке бургера
+//   })
+
+//     bg.addEventListener('click', e => {
+//     if(e.target.classList.contains('dark__bg')) {
+//       menu.classList.remove('active')
+//       menuBtn.classList.remove('active')
+//       // body.classList.remove('lock')
+//       bg.classList.remove('active')
+//     }
+//   })
+
+
+// }
+
+
+// if (menu && menuBtn) {
+//   menuBtn.addEventListener('click', e => {
+//     menu.classList.toggle('active')    //открываем меню
+//     menuBtn.classList.toggle('active') //делаем крестик из иконки
+//     // body.classList.toggle('lock')      //блокируем прокрутку экрана
+//     bg.classList.toggle('active')      //включаем затемнение
+    
+//   })
+
+//   bg.addEventListener('click', e => {
+//     if(e.target.classList.contains('dark__bg')) {
+//       menu.classList.remove('active')
+//       menuBtn.classList.remove('active')
+//       // body.classList.remove('lock')
+//       bg.classList.remove('active')
+//     }
+//   })
+
+//   menu.querySelectorAll('.item-link').forEach(link => {
+//     link.addEventListener('click', () => {
+//       menu.classList.remove('active')
+//       menuBtn.classList.remove('active')
+//       body.classList.remove('lock')
+//       bg.classList.remove('active')
+//     })
+//   })
+// }

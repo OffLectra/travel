@@ -133,16 +133,36 @@ button {
 
 
 
+
+body.lock {
+    overflow: hidden;
+}
+.dark__bg {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #00000096;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+}
+.dark__bg.active {
+    display: block;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+}
 .popup {
     position: absolute;
     padding: 25px 45px 25px 45px;
-    top: 100px;
-    right: 0px;
+    top: 30px;
     width: 100%;
     max-width: 650px;
     background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 16px;
+    
 }
 @media (max-width: 450px) {
     .popup {
@@ -150,9 +170,12 @@ button {
     }
 }
 #login__popup {
-
     height: 660px;
     display: none;
+}
+#login__popup.active {
+    height: 660px;
+    display: block;
 }
 .popup__body {
     width: 100%;
@@ -314,11 +337,15 @@ button {
     text-decoration-line: underline;
     color: #0D606F;
     text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+    cursor: pointer;
 }
 
 
 
 #create__popup {
+    display: none;
+}
+#create__popup.active {
     display: block;
 }
 
