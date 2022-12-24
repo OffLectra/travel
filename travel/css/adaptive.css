@@ -13,17 +13,6 @@
         z-index: 30;
         cursor: pointer;
     }
-
-    .helper-icon {
-        width: 35px;
-        height: 100%;
-        position: relative;
-        z-index: 33;
-        /* position: absolute; */
-        top: 0;
-        right: 0;
-    }
-
     .menu__icon.active #menu__icon__span{
         transform: scale(0);
     }
@@ -57,6 +46,7 @@
         bottom: 25%;
         height: 3.5px;
     }
+
     .header__menu {
         position: absolute;
         width: 165px;
