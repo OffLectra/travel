@@ -139,7 +139,7 @@ if (menu && menuBtn) {
     menu.classList.add('active')    //открываем меню
     menuBtn.classList.add('active') //делаем крестик из иконки
     body.classList.toggle('lock')      //блокируем прокрутку экрана
-    bg.classList.add('active')      //включаем затемнение
+    bg.classList.add('active')        //включаем затемнение
     login.classList.remove('active')
     reg.classList.remove('active')
     if(e.target.classList.contains('active')) {
