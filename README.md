@@ -1,3 +1,4 @@
-# offlectra-JSFEPRESCHOOL2022Q2
-Private repository for @offlectra
-https://rolling-scopes-school.github.io/offlectra-JSFEPRESCHOOL2022Q2/travel/
+TRAVEL
+
+Task: https://github.com/rolling-scopes-school/tasks/tree/master/tasks/travel
+Deploy: https://offlectra.github.io/travel/travel/
