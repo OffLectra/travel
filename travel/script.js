@@ -150,7 +150,6 @@ if (menu && menuBtn) {
     }
 
 
-
   })
 
   bg.addEventListener('click', e => {
