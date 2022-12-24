@@ -1,4 +1,4 @@
 TRAVEL
 
-Task: https://github.com/rolling-scopes-school/tasks/tree/master/tasks/travel  
+Task: https://github.com/rolling-scopes-school/tasks/blob/master/tasks/travel/travel.md  
 Deploy: https://offlectra.github.io/travel/travel/
